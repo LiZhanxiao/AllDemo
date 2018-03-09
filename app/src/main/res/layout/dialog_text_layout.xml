@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="250px"
+        android:layout_height="250px"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_black_corner">
+
+        <ProgressBar
+            style="@style/progress_big"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/login_text"
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/message_dia_logining"
+            android:textColor="@color/text_loading_toast"
+            android:textSize="@dimen/text_content_normal_font" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoRelativeLayout>
